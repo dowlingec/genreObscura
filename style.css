@@ -1,13 +1,14 @@
 body {
-    background: 
+    background: #ffffcc;
 }
 
 h1 {
     font-size: 4em;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Permanent Marker', Arial, sans-serif;
 
 }
 
 #genreNate {
     padding: 2px
+    background: black;
 }
