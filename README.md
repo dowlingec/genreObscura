@@ -8,8 +8,6 @@ I will also be using https://picsum.photos/ API to add a random background image
 And question, as any client input data does not have to persist does this mean we only have to do a GET request?
 
 JS
-take current genTxt content and set value of genre form with it
-genTxt >>> aName.value.innerText = genTxt
 fetch image and replace post it
 
 CSS

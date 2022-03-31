@@ -2,6 +2,8 @@
 let genBtn = document.getElementById('genreNate')
 let genTxt = document.getElementById('gen-h3')
 let bulletinBoard = document.getElementById('bulletinBoard')
+let genre = document.getElementById('genre')
+
 
 const requestGenre = async () => {
     let req = await fetch('https://binaryjazz.us/wp-json/genrenator/v1/genre/')
@@ -10,6 +12,8 @@ const requestGenre = async () => {
     // let h3 = document.createElement('h3')
     genTxt.innerText = res
     genBtn.innerText = `Try again`
+
+    genre.value = res.toUpperCase()
 }
 
 const requestImg = async () => {
@@ -21,13 +25,14 @@ const requestImg = async () => {
 
 genBtn.addEventListener('click', () => {
     requestGenre()
+
 })
 
 let form = document.getElementById('form')
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     let aName = document.getElementById('aName')
-    let genre = document.getElementById('genre')
+    // let genre = document.getElementById('genre')
     let link = document.getElementById('link')
     let desc = document.getElementById('desc')
     // field.value
@@ -39,5 +44,5 @@ form.addEventListener('submit', (e) => {
     clickLink.href = link.value
     clickLink.innerText = "Check 'em out"
     bulletinBoard.append(head, p, clickLink)
-
+    form.reset()
 })
