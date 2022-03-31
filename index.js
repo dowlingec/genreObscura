@@ -1,11 +1,7 @@
 // alert('js connect')
-let genBtn, genTxt
-genBtn = document.getElementById('genreNate')
-genTxt = document.getElementById('gen-h3')
-
-genBtn.addEventListener('click', () => {
-    requestGenre()
-})
+let genBtn = document.getElementById('genreNate')
+let genTxt = document.getElementById('gen-h3')
+let bulletinBoard = document.getElementById('bulletinBoard')
 
 const requestGenre = async () => {
     let req = await fetch('https://binaryjazz.us/wp-json/genrenator/v1/genre/')
@@ -16,3 +12,32 @@ const requestGenre = async () => {
     genBtn.innerText = `Try again`
 }
 
+const requestImg = async () => {
+    let req2 = await fetch('https://picsum.photos/')
+    let res2 = await req2.json()
+    console.log('Noice', res2)
+}
+// requestImg()
+
+genBtn.addEventListener('click', () => {
+    requestGenre()
+})
+
+let form = document.getElementById('form')
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    let aName = document.getElementById('aName')
+    let genre = document.getElementById('genre')
+    let link = document.getElementById('link')
+    let desc = document.getElementById('desc')
+    // field.value
+    let head = document.createElement('h4')
+    head.innerText = `${aName.value} - ${genre.value}`
+    let p = document.createElement('p')
+    p.innerText = desc.value
+    let clickLink = document.createElement('a')
+    clickLink.href = link.value
+    clickLink.innerText = "Check 'em out"
+    bulletinBoard.append(head, p, clickLink)
+
+})

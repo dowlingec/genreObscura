@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: black;
+    background: white;
     /* background: url(img/140154873-cork-board-texture-perfect-high-resolution-grunge-background-.webp) #ffffcc;
     background-size: 90% 90%; */
 }
@@ -32,6 +32,21 @@ h4 {
     font-family: 'Permanent Marker', Arial, sans-serif;
     color: black;
     text-align: center;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: black;
+    text-align: center;
+}
+
+a {
+    font-size: 1em;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: black;
+    text-align: center;
+    text-decoration: none;
 }
 
 .heading {
@@ -66,16 +81,40 @@ h4 {
     position: center;
 }
 
-.postIt {
-    height: 35%;
-    width: 35%;
-}
-
 #genreNate {
     padding: 2px;
     background: gray;
     font-family: 'Permanent Marker';
 }
+
+
+.comment-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bulletinBoard {
+    border: 1px solid #ccc;
+    border-top: 4px solid blue;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #fff;
+    height: 380px;
+    width: 25%;
+    padding: 0 3%;
+}
+
+.commentForm {
+    border: 1px solid #ccc;
+    border-top: 4px solid blue;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #fff;
+    height: 380px;
+    width: 25%;
+    padding: 0 3%;
+}
+
 /* .container{
     display: flex;
     justify-content: space-evenly;

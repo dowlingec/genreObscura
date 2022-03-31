@@ -1,4 +1,3 @@
-Hi Michael this is my project idea:
 GENRE OBSCURA
 Fun genre generating tool for when the drummer asks "wait... what even are we?" at practice
 Also a place for people to share their bands, (or find new music)
@@ -9,8 +8,11 @@ I will also be using https://picsum.photos/ API to add a random background image
 And question, as any client input data does not have to persist does this mean we only have to do a GET request?
 
 JS
-
 take current genTxt content and set value of genre form with it
+genTxt >>> aName.value.innerText = genTxt
+fetch image and replace post it
 
 CSS
+button formatting
 set bg image for div, to help them float together properly
+second handwriting font for bulletin board
