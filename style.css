@@ -85,12 +85,14 @@ a {
 
 #genreNate {
     padding: 2px;
-    background: gray;
+    background: rgb(159, 155, 155);
     font-family: 'Permanent Marker';
     font-size: 2em;
     height: 100px;
     width: 30%;
     border-radius: 8px;
+    align-self: center;
+    margin: 10px;
 }
 
 #container-cmmnt {
@@ -104,24 +106,28 @@ a {
     #bulletinBoard {
         height: auto;
         width: 45%;
+        /* padding: 0.5em */
     }
 
         #comment {
             border-top: 50px solid rgb(236, 229, 151);
-            border-bottom-right-radius: 5px;
-            border-bottom-left-radius: 5px;
-            background-color: palegoldenrod;
-        
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+            background-color: palegoldenrod;        
             /* overflow:hidden; */
-            /* padding: 5% 5%; */
+            margin: 10px;
         }
 
     #commentForm {
     width: 450px;
+    height: 350px;
 	font-size: 16px;
 	background: palegoldenrod;
 	padding: 30px 30px 15px 30px;
 	border-top: 50px solid rgb(236, 229, 151);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin: 10px;
     /* padding: 0 3%; */
     }
 
