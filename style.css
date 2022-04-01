@@ -99,18 +99,22 @@ a {
     height: auto;
     width: 100%;
     background-color: black;
-}
 
+}
     #bulletinBoard {
-    border-top: 50px solid rgb(236, 229, 151);
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    background-color: palegoldenrod;
-    height: auto;
-    width: 45%;
-    /* overflow:hidden; */
-    /* padding: 5% 5%; */
+        height: auto;
+        width: 45%;
     }
+
+        #comment {
+            border-top: 50px solid rgb(236, 229, 151);
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            background-color: palegoldenrod;
+        
+            /* overflow:hidden; */
+            /* padding: 5% 5%; */
+        }
 
     #commentForm {
     width: 450px;
@@ -121,13 +125,13 @@ a {
     /* padding: 0 3%; */
     }
 
-.field {
-    background: transparent;
-    border: none;
-    border-bottom: 1px dashed black;
-    width: 275px;
-    outline: none;
-    padding: 0px 0px 0px 0px;
-    font-style: 'Gloria Hallelujah', cursive;
-    font-size: large;
-}
+        .field {
+        background: transparent;
+        border: none;
+        border-bottom: 1px dashed black;
+        width: 90%;
+        outline: none;
+        padding: 0px 0px 0px 0px;
+        font-style: 'Gloria Hallelujah', cursive;
+        font-size: large;
+        }

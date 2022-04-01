@@ -35,8 +35,8 @@ form.addEventListener('submit', (e) => {
     let link = document.getElementById('link')
     let desc = document.getElementById('desc')
     
-    // let div = document.createElement('div')
-    // div.id = "bulletinBoard"
+    let div = document.createElement('div')
+    div.id = "comment"
     let head = document.createElement('h4')
     head.innerHTML = `${aName.value}<br>->${genre.value}`
     let p = document.createElement('p')
@@ -45,7 +45,7 @@ form.addEventListener('submit', (e) => {
     clickLink.href = link.value
     clickLink.innerText = "Check 'em out"
     // div.append(head, p, clickLink)
-    // cmmntContain.append(div)
-    bulletinBoard.append(head, p, clickLink)
+    div.append(head, p, clickLink)
+    bulletinBoard.append(div)
     form.reset()
 })
