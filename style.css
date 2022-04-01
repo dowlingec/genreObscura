@@ -53,6 +53,7 @@ a {
 
 .heading {
     position: relative;
+    padding: 0;
     margin: 0;
     background: url(img/6-duct-tape-3.png);
     background-size: 95% 80%;
@@ -65,14 +66,14 @@ a {
     flex-direction: column;
     align-content: center;
     /* border: 3px solid black; */
-    /* height: 25% */
+    height: 25%
 }
 
 .genInner{
     margin: auto;
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     padding: 10px;
     background-image: url(img/post-it-note-transparent-background-3.png);
     background-position: center;
@@ -106,26 +107,24 @@ a {
 }
     #bulletinBoard {
         height: auto;
-        width: 45%;
+        width: 60%;
     }
 
         #comment {
             border-top: 50px solid rgb(236, 229, 151);
-            border-bottom-right-radius: 3px;
-            border-bottom-left-radius: 3px;
+            border-radius: 3px;
             background-color: palegoldenrod;        
             margin: 10px;
         }
 
     #commentForm {
-        width: 450px;
+        width: 30%;
         height: 350px;
 	    font-size: 16px;
 	    background: palegoldenrod;
-	    padding: 30px 30px 15px 30px;
+	    padding: 30px 30px;
 	    border-top: 50px solid rgb(236, 229, 151);
-        border-bottom-left-radius: 3px;
-        border-bottom-right-radius: 3px;
+        border-radius: 3px;
         margin: 10px;
     }
 
@@ -136,6 +135,7 @@ a {
             width: 90%;
             outline: none;
             padding: 0px 0px 0px 0px;
-            font-style: 'Gloria Hallelujah', cursive;
+            font-family: 'Gloria Hallelujah', cursive;
             font-size: large;
+            align-self: center;
         }

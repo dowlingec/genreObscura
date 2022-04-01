@@ -1,4 +1,3 @@
-// alert('js connect')
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 });
@@ -9,7 +8,6 @@ let bulletinBoard = document.getElementById('bulletinBoard')
 let genre = document.getElementById('genre')
 // let cmmntContain = document.getElementById('container-cmmnt')
 
-
 const requestGenre = async () => {
     let req = await fetch('https://binaryjazz.us/wp-json/genrenator/v1/genre/')
     let res = await req.json()
@@ -17,32 +15,22 @@ const requestGenre = async () => {
     // let h3 = document.createElement('h3')
     genTxt.innerText = res
     genBtn.innerText = `Try again`
-
+    
     genre.value = res.toUpperCase()
 }
 
+genBtn.addEventListener('click', () => {
+    requestGenre()
+    // requestImg()
+})
+
 // const requestImg = async () => {
-//     let req2 = await fetch('https://picsum.photos/400')
+//     let req2 = await fetch('https://picsum.photos/500')
 //     let res2 = await req2.json()
     
 //     console.log('Noice', res2)
 // }
 // requestImg()
-
-fetch("https://picsum.photos/400").then(async response => {
-    try {
-     const data = await response.json()
-     console.log('response data?', data)
-   } catch(error) {
-     console.log('Error happened here!')
-     console.error(error)
-   }
-})
-
-
-genBtn.addEventListener('click', () => {
-    requestGenre()
-})
 
 let form = document.getElementById('form')
 form.addEventListener('submit', (e) => {
