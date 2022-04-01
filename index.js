@@ -3,6 +3,7 @@ let genBtn = document.getElementById('genreNate')
 let genTxt = document.getElementById('gen-h3')
 let bulletinBoard = document.getElementById('bulletinBoard')
 let genre = document.getElementById('genre')
+// let cmmntContain = document.getElementById('container-cmmnt')
 
 
 const requestGenre = async () => {
@@ -16,26 +17,26 @@ const requestGenre = async () => {
     genre.value = res.toUpperCase()
 }
 
-const requestImg = async () => {
-    let req2 = await fetch('https://picsum.photos/')
-    let res2 = await req2.json()
-    console.log('Noice', res2)
-}
-// requestImg()
+// const requestImg = async () => {
+//     let req2 = await fetch('https://picsum.photos/')
+//     let res2 = await req2.json()
+//     console.log('Noice', res2)
+// }
+// // requestImg()
 
 genBtn.addEventListener('click', () => {
     requestGenre()
-
 })
 
 let form = document.getElementById('form')
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     let aName = document.getElementById('aName')
-    // let genre = document.getElementById('genre')
     let link = document.getElementById('link')
     let desc = document.getElementById('desc')
-    // field.value
+    
+    // let div = document.createElement('div')
+    // div.id = "bulletinBoard"
     let head = document.createElement('h4')
     head.innerHTML = `${aName.value}<br>->${genre.value}`
     let p = document.createElement('p')
@@ -43,6 +44,8 @@ form.addEventListener('submit', (e) => {
     let clickLink = document.createElement('a')
     clickLink.href = link.value
     clickLink.innerText = "Check 'em out"
+    // div.append(head, p, clickLink)
+    // cmmntContain.append(div)
     bulletinBoard.append(head, p, clickLink)
     form.reset()
 })

@@ -28,14 +28,14 @@ h3 {
 }
 
 h4 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-family: 'Permanent Marker', Arial, sans-serif;
     color: black;
     text-align: center;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'Gloria Hallelujah', cursive;
     color: black;
     text-align: center;
@@ -61,6 +61,7 @@ a {
 .container-gen {
     display: flex; /* or inline-flex */
     flex-direction: column;
+    align-content: center;
     /* border: 3px solid black; */
     /* height: 25% */
 }
@@ -86,50 +87,43 @@ a {
     padding: 2px;
     background: gray;
     font-family: 'Permanent Marker';
+    font-size: 2em;
     height: 100px;
     width: 30%;
     border-radius: 8px;
-    position: center;
 }
 
 
 #container-cmmnt {
     display: flex;
     justify-content: space-around;
-    height: 600px;
+    height: auto;
     width: 100%;
+    background-color: black;
     /* justify-content: center; */
 }
 
-
-#bulletinBoard {
-    border: 1px solid black;
-    border-top: 4px solid blue;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    background-color: #fff;
-    height: 100%;
+    #bulletinBoard {
+    /* border: 1px solid black; */
+    /* border-top: 4px solid blue; */
+    border-top: 50px solid rgb(236, 229, 151);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: palegoldenrod;
+    height: auto;
     width: 45%;
-    
+    /* overflow:hidden; */
     /* padding: 5% 5%; */
-}
+    }
 
-#commentForm {
-    /* border: 1px solid #ccc;
-    border-top: 4px solid blue;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    background-color: #fff;
-    height: 100%;
-    width: 45%; */
-    
+    #commentForm {
     width: 450px;
 	font-size: 16px;
 	background: palegoldenrod;
 	padding: 30px 30px 15px 30px;
-	border-top: 25px solid rgb(236, 229, 151);
+	border-top: 50px solid rgb(236, 229, 151);
     /* padding: 0 3%; */
-}
+    }
 
 .field {
     background: transparent;
@@ -141,13 +135,3 @@ a {
     font-style: 'Gloria Hallelujah', cursive;
     font-size: large;
 }
-/* .container{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.box {
-    height: 100px;
-    width: 100px;
-    background: blue
-} */

@@ -21,3 +21,6 @@ bulletin board - 70%
 -
 form - 30%
 - style field values
+
+bulletin board - create new inner Div so that new cmment can be appended as new div ( in its own little box so each is separated)
+turn off overflowhide TEMPORARILY
