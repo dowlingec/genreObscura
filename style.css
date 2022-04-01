@@ -32,6 +32,7 @@ h4 {
     font-family: 'Permanent Marker', Arial, sans-serif;
     color: black;
     text-align: center;
+    padding: none;
 }
 
 p {
@@ -46,7 +47,8 @@ a {
     font-family: 'Gloria Hallelujah', cursive;
     color: black;
     text-align: center;
-    text-decoration: none;
+    text-decoration: underline;
+    margin-left: 2em;
 }
 
 .heading {
@@ -105,7 +107,6 @@ a {
     #bulletinBoard {
         height: auto;
         width: 45%;
-        /* padding: 0.5em */
     }
 
         #comment {
@@ -113,30 +114,28 @@ a {
             border-bottom-right-radius: 3px;
             border-bottom-left-radius: 3px;
             background-color: palegoldenrod;        
-            /* overflow:hidden; */
             margin: 10px;
         }
 
     #commentForm {
-    width: 450px;
-    height: 350px;
-	font-size: 16px;
-	background: palegoldenrod;
-	padding: 30px 30px 15px 30px;
-	border-top: 50px solid rgb(236, 229, 151);
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    margin: 10px;
-    /* padding: 0 3%; */
+        width: 450px;
+        height: 350px;
+	    font-size: 16px;
+	    background: palegoldenrod;
+	    padding: 30px 30px 15px 30px;
+	    border-top: 50px solid rgb(236, 229, 151);
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        margin: 10px;
     }
 
         .field {
-        background: transparent;
-        border: none;
-        border-bottom: 1px dashed black;
-        width: 90%;
-        outline: none;
-        padding: 0px 0px 0px 0px;
-        font-style: 'Gloria Hallelujah', cursive;
-        font-size: large;
+            background: transparent;
+            border: none;
+            border-bottom: 1px dashed black;
+            width: 90%;
+            outline: none;
+            padding: 0px 0px 0px 0px;
+            font-style: 'Gloria Hallelujah', cursive;
+            font-size: large;
         }

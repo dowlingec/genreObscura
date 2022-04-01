@@ -12,15 +12,10 @@ fetch image and replace post it (all apis seem to be tresh)
 
 
 CSS
-genrenate button formatting
 contain genre within bg (some spill over)
 
-container-cmmnt add padding btwn button and this section, bg-clr black
+
 bulletin board - 70%
-- no bottom border
--
+
 form - 30%
 - style field values
-
-bulletin board - create new inner Div so that new cmment can be appended as new div ( in its own little box so each is separated)
-turn off overflowhide TEMPORARILY

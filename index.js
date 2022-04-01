@@ -1,4 +1,8 @@
 // alert('js connect')
+document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("DOM fully loaded and parsed");
+});
+
 let genBtn = document.getElementById('genreNate')
 let genTxt = document.getElementById('gen-h3')
 let bulletinBoard = document.getElementById('bulletinBoard')
@@ -18,11 +22,23 @@ const requestGenre = async () => {
 }
 
 // const requestImg = async () => {
-//     let req2 = await fetch('https://picsum.photos/')
+//     let req2 = await fetch('https://picsum.photos/400')
 //     let res2 = await req2.json()
+    
 //     console.log('Noice', res2)
 // }
-// // requestImg()
+// requestImg()
+
+fetch("https://picsum.photos/400").then(async response => {
+    try {
+     const data = await response.json()
+     console.log('response data?', data)
+   } catch(error) {
+     console.log('Error happened here!')
+     console.error(error)
+   }
+})
+
 
 genBtn.addEventListener('click', () => {
     requestGenre()
