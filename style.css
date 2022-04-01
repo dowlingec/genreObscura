@@ -103,39 +103,43 @@ a {
     height: auto;
     width: 100%;
     background-color: black;
-
 }
-    #bulletinBoard {
-        height: auto;
-        width: 60%;
-    }
 
-        #comment {
-            border-top: 50px solid rgb(236, 229, 151);
-            border-radius: 3px;
-            background-color: palegoldenrod;        
-            margin: 10px;
-        }
+#bulletinBoard {
+    height: auto;
+    width: 60%;
+}
 
-    #commentForm {
-        width: 30%;
-        height: 350px;
-	    font-size: 16px;
-	    background: palegoldenrod;
-	    padding: 30px 30px;
-	    border-top: 50px solid rgb(236, 229, 151);
-        border-radius: 3px;
-        margin: 10px;
-    }
+#comment {
+    border-top: 50px solid rgb(236, 229, 151);
+    border-radius: 3px;
+    background-color: palegoldenrod;        
+    margin: 10px;
+}
 
-        .field {
-            background: transparent;
-            border: none;
-            border-bottom: 1px dashed black;
-            width: 90%;
-            outline: none;
-            padding: 0px 0px 0px 0px;
-            font-family: 'Gloria Hallelujah', cursive;
-            font-size: large;
-            align-self: center;
-        }
+#commentForm {
+    width: 30%;
+    height: 350px;
+	font-size: 16px;
+	background: palegoldenrod;
+	padding: 30px 30px;
+	border-top: 50px solid rgb(236, 229, 151);
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.field {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed black;
+    width: 90%;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: large;
+    align-self: center;
+}
+
+#likeBtn {
+    background-color: palegoldenrod;
+}

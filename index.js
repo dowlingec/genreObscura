@@ -40,16 +40,37 @@ form.addEventListener('submit', (e) => {
     let desc = document.getElementById('desc')
     
     let div = document.createElement('div')
-    div.id = "comment"
     let head = document.createElement('h4')
-    head.innerHTML = `${aName.value}<br>->${genre.value}`
     let p = document.createElement('p')
-    p.innerText = desc.value
     let clickLink = document.createElement('a')
+    let brk = document.createElement('br')
+    let buttonL = document.createElement('button')
+
+    div.id = "comment"
+    head.innerHTML = `${aName.value}<br>->${genre.value}`
+    p.innerText = desc.value
     clickLink.href = link.value
     clickLink.innerText = "Check 'em out"
-    // div.append(head, p, clickLink)
-    div.append(head, p, clickLink)
+    buttonL.id = "likeBtn"
+    let startNum2 = 0
+    buttonL.innerText = `${startNum2} likes`
+
+    div.append(head, p, clickLink, brk, buttonL)
     bulletinBoard.append(div)
     form.reset()
 })
+
+//create like button
+let button = document.createElement('button')
+button.id = "likeBtn"
+let startNum = 0
+button.innerText = `${startNum} likes`
+let comment = document.getElementById('comment')
+comment.append(button)
+
+
+// let likeBtn = document.getElementById('likeBtn')
+// likeBtn.addEventListener('click', () => {
+//     let startNum = 0
+
+// })
