@@ -8,9 +8,16 @@ I will also be using https://picsum.photos/ API to add a random background image
 And question, as any client input data does not have to persist does this mean we only have to do a GET request?
 
 JS
-fetch image and replace post it
+fetch image and replace post it (all apis seem to be tresh)
+
 
 CSS
-button formatting
-set bg image for div, to help them float together properly
-second handwriting font for bulletin board
+genrenate button formatting
+contain genre within bg (some spill over)
+
+container-cmmnt add padding btwn button and this section, bg-clr black
+bulletin board - 70%
+- no bottom border
+-
+form - 30%
+- style field values

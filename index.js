@@ -37,7 +37,7 @@ form.addEventListener('submit', (e) => {
     let desc = document.getElementById('desc')
     // field.value
     let head = document.createElement('h4')
-    head.innerText = `${aName.value} - ${genre.value}`
+    head.innerHTML = `${aName.value}<br>->${genre.value}`
     let p = document.createElement('p')
     p.innerText = desc.value
     let clickLink = document.createElement('a')

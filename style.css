@@ -35,7 +35,7 @@ h4 {
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: 'Gloria Hallelujah', cursive;
     color: black;
     text-align: center;
@@ -53,18 +53,19 @@ a {
     position: relative;
     margin: 0;
     background: url(img/6-duct-tape-3.png);
-    background-size: 95% 100%;
+    background-size: 95% 80%;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
-.gen-container {
+.container-gen {
     display: flex; /* or inline-flex */
     flex-direction: column;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     /* height: 25% */
 }
 
-.gen-container .genInner{
+.genInner{
     margin: auto;
     position: relative;
     width: 500px;
@@ -85,36 +86,61 @@ a {
     padding: 2px;
     background: gray;
     font-family: 'Permanent Marker';
+    height: 100px;
+    width: 30%;
+    border-radius: 8px;
+    position: center;
 }
 
 
-.comment-container {
+#container-cmmnt {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: 600px;
+    width: 100%;
+    /* justify-content: center; */
 }
 
-.bulletinBoard {
-    border: 1px solid #ccc;
+
+#bulletinBoard {
+    border: 1px solid black;
     border-top: 4px solid blue;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     background-color: #fff;
-    height: 380px;
-    width: 25%;
-    padding: 0 3%;
+    height: 100%;
+    width: 45%;
+    
+    /* padding: 5% 5%; */
 }
 
-.commentForm {
-    border: 1px solid #ccc;
+#commentForm {
+    /* border: 1px solid #ccc;
     border-top: 4px solid blue;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     background-color: #fff;
-    height: 380px;
-    width: 25%;
-    padding: 0 3%;
+    height: 100%;
+    width: 45%; */
+    
+    width: 450px;
+	font-size: 16px;
+	background: palegoldenrod;
+	padding: 30px 30px 15px 30px;
+	border-top: 25px solid rgb(236, 229, 151);
+    /* padding: 0 3%; */
 }
 
+.field {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed black;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: 'Gloria Hallelujah', cursive;
+    font-size: large;
+}
 /* .container{
     display: flex;
     justify-content: space-evenly;
