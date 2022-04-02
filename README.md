@@ -7,15 +7,5 @@ I will also be using https://picsum.photos/ API to add a random background image
 -Client can leave a bandname, link and brief description alongside the ridiculous genre they received, so people can really get a feel for what 'shoehorn shuffle' (or whatever) really sounds like
 And question, as any client input data does not have to persist does this mean we only have to do a GET request?
 
-JS
-fetch image and replace post it (all apis seem to be tresh)
-
-
-CSS
-contain genre within bg (some spill over)
-
-
-bulletin board - 70%
-
-form - 30%
-- style field values
+1 April note
+Changed a few functionalities to meet the criterea within the time limit
